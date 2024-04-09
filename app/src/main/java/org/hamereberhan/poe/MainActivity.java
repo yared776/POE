@@ -28,9 +28,6 @@ public class MainActivity extends AppCompatActivity {
         webView = findViewById(R.id.webview);
         loadingAnimationView = findViewById(R.id.loadingAnimationView);
 
-        // Load the animation
-        loadingAnimationView.setAnimation("loading_animation.json");
-
         webView.setWebViewClient(new MyBrowser());
         webView.getSettings().setJavaScriptEnabled(true);
 
